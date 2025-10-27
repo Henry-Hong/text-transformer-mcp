@@ -10,11 +10,29 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsc && node dist/index.js"
+    "dev": "tsc && node dist/index.js",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": ["mcp", "text", "transformer", "tool"],
+  "keywords": [
+    "mcp",
+    "text",
+    "transformer",
+    "tool",
+    "cli"
+  ],
   "author": "",
   "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Henry-Hong/text-transformer-mcp.git"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "zod": "^3.23.8"
